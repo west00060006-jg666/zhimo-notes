@@ -193,15 +193,6 @@ section{position:relative;z-index:1;}
   position:relative;
   box-shadow:0 2px 0 rgba(0,0,0,.03),0 14px 34px -22px rgba(60,45,30,.5);
 }
-.info-card--ribbon::before{
-  content:"";position:absolute;top:-1px;right:26px;width:34px;height:64px;
-  background:linear-gradient(180deg,var(--pine),#2c4239);
-  box-shadow:0 6px 16px -6px rgba(0,0,0,.5);
-}
-.info-card--ribbon::after{
-  content:"";position:absolute;top:63px;right:26px;
-  border-left:17px solid #2c4239;border-right:17px solid #2c4239;border-bottom:16px solid transparent;
-}
 .kv{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;margin:0;}
 .kv dt{
   font-family:var(--serif);font-size:13px;color:var(--ink-faint);
@@ -527,7 +518,6 @@ footer .fmetaz{opacity:.7;}
   .kv dt{padding-top:12px;}
   .kv dd{padding-bottom:10px;border-bottom:1px dashed var(--line-2);}
   .kv dd:last-child{border-bottom:none;}
-  .info-card--ribbon::before,.info-card--ribbon::after{display:none;}
   .quote__text{line-height:1.95;}
 }
 @media (max-width:400px){
@@ -599,7 +589,7 @@ footer .fmetaz{opacity:.7;}
         </dl>
       </div>
 
-      <div class="info-card info-card--ribbon">
+      <div class="info-card">
         <p class="claim">
           这套全集最值钱的地方，不是那几首人人会背的诗，而是它把<strong>"诗人"这个形象拆碎了给你看</strong>——
           未刊稿、墨迹函札、日记、校勘表、年谱、遗文存目都在里面。
